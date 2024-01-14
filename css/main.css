@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D0D0D;
+}
+.bar{
+    background-color: #FFF;
+    padding: 2px;
+    height: 100vh;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar img {
+    width:40px
+}
+.nav-burg{
+    cursor: pointer;
+}
+.nav-burg div {
+    width:25px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: #0D0D0D; 
+    transition: all .5s;
+}
+.icons a {
+    text-decoration: none;
+}
+.icons a i {
+    color:#0D0D0D
+}
+nav {
+    display: flex ;
+    flex-direction: column;
+    width: 200px;
+    justify-content: space-between;
+    background-color: #0D0D0D;
+}
+
+.px-3 a i {
+    color: #FFF;
+}
+.links ul li {
+    list-style: none;
+    margin-top: 15px;
+}
+.links ul li a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all 1s;
+}
+.links ul li a:hover {
+    color:#D62000;
+}
+.sidebar{
+    position: fixed;
+    z-index: 12;
+    transform: translateX(-82%);
+    transition: all 1s;
+}
+.image img{
+    height: 500px;
+}
+.info-container {
+    position: relative;
+    overflow: hidden;
+}
+.link{
+    cursor: pointer;
+}
+.info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255 ,255, 255, .5);
+    bottom: 0;
+    transition: all 1s ;
+    transform: translateY(100%);
+}
+.info-container:hover .info{
+    transform: translateY(0);
+}
+.form-control{
+    text-align: center;
+    background-color: transparent !important;
+    color:#FFF !important;
+    outline: none !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #FFF;
+}
+.nav-time div:nth-child(2){
+    display: none;
+    transition: all 1s;
+}
+.nav-time div:nth-child(1){
+    transform: rotate(47deg);
+    transition: all 1s;
+}
+.nav-time div:nth-child(3){
+    transform: translate(1px, -10px) rotate(-45deg);
+    transition: all 1s;
+}
+.re {
+    transform: translateX(0);
+}

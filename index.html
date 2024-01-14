@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movies</title>
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="sidebar d-flex" id="sidebar">
+            <nav id="nav">
+                <div class="links">
+                    <ul class="py-4">
+                        <li class="navs wow" data-wow-duration =".5s"><a id="movie/now_playing" class="link" >Now playing</a></li>
+                        <li class="navs wow" data-wow-duration =".6s"><a id="movie/popular" class="link">Popular</a></li>
+                        <li class="navs wow" data-wow-duration =".7s"><a id="movie/top_rated" class="link">Top Rated</a></li>
+                        <li class="navs wow" data-wow-duration =".8s"><a id="trending/movie/week" class="link">Trending</a></li>
+                        <li class="navs wow" data-wow-duration =".9s"><a id="movie/upcoming" class="link">Upcoming</a></li>
+                        <li class="navs wow" data-wow-duration ="1s"><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="px-3">
+                    <a href="" ><i class="fab fa-twitter" ></i></a>
+                    <a href=""><i class="fab fa-facebook mx-3"></i></a>
+                    <a href=""><i class="fas fa-globe"></i></a>
+                    <p class="text-white ">copyright 2019&copy; All Rights Reserved.</p>
+                </div>
+            </nav>
+            <div class="bar">
+                <img src="images/logo.png" alt="">
+                <div class="nav-burg" id="nav-btn" >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="icons">
+                    <a href=""> <i class="fas fa-globe d-block "></i> </a>
+                    <a href=""> <i class="fas fa-share-alt my-2"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div class="home py-5">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-6 py-5">
+                            <input type="text" id="word-search" class="form-control" placeholder="Search By word">
+                        </div>
+                        <div class="col-md-6 py-5">
+                            <input type="text" id="search" class="form-control" placeholder = "search...">
+                        </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" id="show">
+                </div>
+            </div>
+        </div>
+        <div class="contact py-5">
+            <div class="container">
+                <h2 class="text-white">contact Us....</h2>
+                <div class="row">
+                    <div class="col-md-6 my-2">
+                        <input type="text" placeholder="Enter your name " class="form-control text-center py-2" id="name">
+                        <label for="name" id="name-label" class="alert alert-danger w-100 text-center d-none ">your name is not valid</label>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <input type="text" placeholder="Enter E-mail " class="form-control text-center py-2" id="mail">
+                        <label for="name" id="mail-label" class="alert alert-danger w-100 text-center d-none">Email is not valid</label>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <input type="tel"  placeholder="phone" class="form-control text-center py-2" id="phone">
+                        <label for="phone" id="phone-label" class="alert alert-danger w-100 text-center d-none">phone is not valid</label>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <input type="text" placeholder="age"  class="form-control text-center py-2" id="age" >
+                        <label for="age"  id="age-label" class="alert alert-danger w-100 text-center d-none">your age is not valid</label>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <input type="password" placeholder="password" class="form-control text-center py-2" id="password">
+                        <label for="password"  id="password-label" class="alert alert-danger w-100 text-center d-none">entre valid password *Minimum eight characters, at least one letter and one number:*</label>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <input type="password" placeholder="repassword" class="form-control text-center py-2" id="repassword">
+                        <label for="repassword"  id="repassword-label" class="alert alert-danger w-100 text-center d-none">entre valid Repassword</label>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <button class="btn btn-danger" id="submit">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>
